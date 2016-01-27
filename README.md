@@ -13,8 +13,6 @@ npm start
 open http://localhost:3000
 ```
 
-Transforms are enabled for files inside `src` (except `index.js`).
-
 ## License
 
 CC0 (public domain)
