@@ -1,4 +1,4 @@
-# React Transform Boilerplate
+# React TypeScript Boilerplate
 
 This is a fork of [@gaearon's](https://github.com/gaearon) [react-transform-boilerplate](https://github.com/gaearon/react-transform-boilerplate). It has been modified for
 use with TypeScript.
