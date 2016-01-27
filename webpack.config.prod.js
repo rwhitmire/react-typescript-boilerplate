@@ -11,6 +11,9 @@ module.exports = {
     filename: 'bundle.js',
     publicPath: '/static/'
   },
+  resolve: {
+    extensions: ['', '.tsx', '.ts', '.js']
+  },
   plugins: [
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.DefinePlugin({
@@ -26,8 +29,8 @@ module.exports = {
   ],
   module: {
     loaders: [{
-      test: /\.jsx$/,
-      loaders: ['babel'],
+      test: /\.tsx$/,
+      loaders: ['ts'],
       include: path.join(__dirname, 'src')
     }]
   }

@@ -13,7 +13,7 @@ module.exports = {
     publicPath: '/static/'
   },
   resolve: {
-    extensions: ['', '.tsx', '.ts', '.js', '.jsx']
+    extensions: ['', '.tsx', '.ts', '.js']
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
@@ -21,10 +21,6 @@ module.exports = {
   ],
   module: {
     loaders: [{
-      test: /\.jsx?/,
-      loaders: ['babel'],
-      include: path.join(__dirname, 'src')
-    },{
       test: /\.tsx?/,
       loaders: ['react-hot', 'ts'],
       include: path.join(__dirname, 'src')
