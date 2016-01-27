@@ -26,7 +26,7 @@ module.exports = {
       include: path.join(__dirname, 'src')
     },{
       test: /\.tsx?/,
-      loaders: ['ts'],
+      loaders: ['react-hot', 'ts'],
       include: path.join(__dirname, 'src')
     }]
   }
